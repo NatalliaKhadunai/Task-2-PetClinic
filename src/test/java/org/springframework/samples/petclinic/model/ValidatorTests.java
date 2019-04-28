@@ -63,5 +63,6 @@ public class ValidatorTests {
     @Test
     public void failTest() {
         assertTrue(false);
+
     }
 }
