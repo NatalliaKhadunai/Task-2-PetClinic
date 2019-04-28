@@ -27,6 +27,7 @@ import org.junit.Test;
 import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
 
+import static junit.framework.TestCase.assertTrue;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
@@ -59,4 +60,8 @@ public class ValidatorTests {
         assertThat(violation.getMessage()).isEqualTo("must not be empty");
     }
 
+    @Test
+    public void failTest() {
+        assertTrue(false);
+    }
 }
