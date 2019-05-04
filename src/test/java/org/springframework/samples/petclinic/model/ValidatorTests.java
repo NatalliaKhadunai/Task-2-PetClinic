@@ -64,5 +64,6 @@ public class ValidatorTests {
     @Test
     public void failTest() {
         fail();
+
     }
 }
