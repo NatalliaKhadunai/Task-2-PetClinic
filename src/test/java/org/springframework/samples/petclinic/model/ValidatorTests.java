@@ -29,6 +29,7 @@ import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
 
 import static junit.framework.TestCase.assertTrue;
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.Assert.fail;
 
 /**
  * @author Michael Isvy Simple test to make sure that Bean Validation is working (useful
@@ -60,9 +61,8 @@ public class ValidatorTests {
         assertThat(violation.getMessage()).isEqualTo("must not be empty");
     }
 
-    /*@Test
+    @Test
     public void failTest() {
-        assertTrue(false);
-
-    }*/
+        fail();
+    }
 }
