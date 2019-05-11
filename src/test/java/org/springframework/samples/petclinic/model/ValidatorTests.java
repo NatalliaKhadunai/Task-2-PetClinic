@@ -63,7 +63,6 @@ public class ValidatorTests {
     }
 
     @Test
-    @Ignore
     public void failTest() {
         fail();
     }
